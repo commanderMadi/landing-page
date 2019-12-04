@@ -15,8 +15,10 @@ function populateNav() {
         window.addEventListener("scroll", function () {
             if (checkIfInViewPort(section)) {
                 section.classList.add("your-active-class");
+                navItem.classList.add("active-link");
             } else {
                 section.classList.remove("your-active-class");
+                navItem.classList.remove("active-link");
             }
         });
     }
